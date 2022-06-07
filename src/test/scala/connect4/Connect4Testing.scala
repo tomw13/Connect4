@@ -95,6 +95,6 @@ class Connect4Testing extends munit.FunSuite {
   test("game takes entered column and places correct token") {
     val game = Game(Board(6,7), Player("tom", "X", 0), Player("jack", "O", 0), false, new TestingInput)
     val test = game.takeTurn(game.player1)
-    assertEquals(test.board.grid(0)(5), "X")
+    assertEquals(test.board.grid.exists(_(5) == "X"), true)
   }
 }
