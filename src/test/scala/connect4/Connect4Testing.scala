@@ -54,6 +54,15 @@ class Connect4Testing extends munit.FunSuite {
     assertEquals(testGrid.checkWin(player), false)
   }
 
+  test("isFull returns true on full grid, and false on empty grid") {
+    val arr1 = Array("X","X","X","O","O","O")
+    val arr2 = Array("O","O","O","X","X","X")
+    val testGrid_1 = Board(Array(arr1, arr2, arr1, arr2, arr1, arr2, arr1))
+    val testGrid_2 = Board(6,7)
+    assertEquals(testGrid_1.isFull, true)
+    assertEquals(testGrid_2.isFull, false)
+  }
+
   test("checkWin returns true on column win grid") {
     val arr1 = Array("X","X","X","X","O","O")
     val arr2 = Array("-","O","O","X","X","X")
@@ -93,8 +102,17 @@ class Connect4Testing extends munit.FunSuite {
   }
 
   test("game takes entered column and places correct token") {
-    val game = Game(Board(6,7), Player("tom", "X", 0), Player("jack", "O", 0), false, new TestingInput)
+    val game = Game(Board(6,7), Player("tom", "X", 0), Player("jack", "O", 0), false, new TestingInput(List(0)))
     val test = game.takeTurn(game.player1)
     assertEquals(test.board.grid.exists(_(5) == "X"), true)
+  }
+
+  test("game ends when board is filled") {
+    val arr1 = Array("X","X","X","O","O","O")
+    val arr2 = Array("O","O","O","X","X","X")
+    val testGrid = Board(Array(arr1, arr2, arr1, arr2, arr1, arr2, arr1))
+    val game = Game(testGrid, Player("tom", "X", 0), Player("jack", "O", 0), false, new TestingInput(List(0)))
+    val test = game.takeTurn(game.player1)
+    assertEquals(test.gameOver, true)
   }
 }
