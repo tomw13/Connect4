@@ -2,34 +2,63 @@
 [0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
 [0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 11 products, 6 sources, 1 libraries[0m
 [0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/connect4/consoleInput/ConsoleInput.scala, ${BASE}/src/main/scala/connect4/consoleInput/PlayerInput.scala, ${BASE}/src/main/scala/connect4/consoleInput/TestingInput.scala, ${BASE}/src/main/scala/connect4/game/Game.scala, ${BASE}/src/main/scala/connect4/player/Player.scala, ${BASE}/src/main/scala/connect4/board/Board.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/connect4/game/Game.scala), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/connect4/board/Board.scala, ${BASE}/src/main/scala/connect4/consoleInput/TestingInput.scala, ${BASE}/src/main/scala/connect4/game/Game.scala), unmodified = ...),Set(${BASE}/target/scala-3.1.2/classes/connect4/game/Game$package.class, ${BASE}/target/scala-3.1.2/classes/connect4/game/Game.class, ${BASE}/target/scala-3.1.2/classes/connect4/board/Board.class, ${BASE}/target/scala-3.1.2/classes/connect4/consoleInput/TestingInput.class),Set(),API Changes: Set())[0m
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial source changes:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	removed: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(${BASE}/src/main/scala/connect4/game/Game.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(${BASE}/src/main/scala/connect4/board/Board.scala, ${BASE}/src/main/scala/connect4/consoleInput/TestingInput.scala, ${BASE}/src/main/scala/connect4/game/Game.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set(${BASE}/target/scala-3.1.2/classes/connect4/game/Game$package.class, ${BASE}/target/scala-3.1.2/classes/connect4/game/Game.class, ${BASE}/target/scala-3.1.2/classes/connect4/board/Board.class, ${BASE}/target/scala-3.1.2/classes/connect4/consoleInput/TestingInput.class)[0m
 [0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(connect4.game.Game, connect4.game.Game$package)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(connect4.board.Board, connect4.consoleInput.TestingInput, connect4.game.Game, connect4.game.Game$package)[0m
 [0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	product: Set(${BASE}/src/main/scala/connect4/game/Game.scala, ${BASE}/src/main/scala/connect4/board/Board.scala, ${BASE}/src/main/scala/connect4/consoleInput/TestingInput.scala)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(connect4.game.Game, connect4.game.Game$package)[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/main/scala/connect4/game/Game.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: connect4.game.Game, connect4.game.Game$package[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(connect4.board.Board, connect4.consoleInput.TestingInput, connect4.game.Game, connect4.game.Game$package)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/main/scala/connect4/board/Board.scala, ${BASE}/src/main/scala/connect4/consoleInput/TestingInput.scala, ${BASE}/src/main/scala/connect4/game/Game.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: connect4.board.Board, connect4.consoleInput.TestingInput, connect4.game.Game, connect4.game.Game$package[0m
 [0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
-[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/tomw/Documents/Scala/Connect4/target/scala-3.1.2/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/tomw/Documents/Scala/Connect4/target/scala-3.1.2/classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mReturning already retrieved and compiled bridge: /Users/tomw/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-sbt-bridge/3.1.2/scala3-sbt-bridge-3.1.2.jar.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 171469e8 for Scala Compiler version 3.1.2[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 1d8cb5a2 for Scala Compiler version 3.1.2[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	/Users/tomw/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.1.2/scala3-library_3-3.1.2.jar:/Users/tomw/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	/Users/tomw/Documents/Scala/Connect4/target/scala-3.1.2/classes[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 0.286886917 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 1.977298708 s[0m
 [0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from connect4.board.Board...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: connect4.board.Board[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(connect4.board.Board)[0m
+[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of connect4.game.Game$package. This dependency is not being considered for invalidation.[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of connect4.game.Game: [UsedName(isFull,[Default])][0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(connect4.board.Board,ModifiedNames(changes = UsedName(isFull,[Default]))) invalidates 2 classes due to The connect4.board.Board has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(isFull,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(connect4.board.Board)[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m  > by member reference: Set(connect4.game.Game)[0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from connect4.consoleInput.TestingInput...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: connect4.consoleInput.TestingInput[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(connect4.consoleInput.TestingInput)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(connect4.consoleInput.TestingInput,ModifiedNames(changes = UsedName(moveSet_=,[Default]), UsedName(moveSet,[Default]), UsedName(TestingInput;init;,[Default]))) invalidates 1 classes due to The connect4.consoleInput.TestingInput has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(moveSet_=,[Default]), UsedName(moveSet,[Default]), UsedName(TestingInput;init;,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(connect4.consoleInput.TestingInput)[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from connect4.game.Game...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: connect4.game.Game[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(connect4.game.Game)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(connect4.game.Game,ModifiedNames(changes = UsedName(play,[Default]))) invalidates 1 classes due to The connect4.game.Game has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(play,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(connect4.game.Game)[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
 [0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
 [0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m

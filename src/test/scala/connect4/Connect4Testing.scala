@@ -112,7 +112,14 @@ class Connect4Testing extends munit.FunSuite {
     val arr2 = Array("O","O","O","X","X","X")
     val testGrid = Board(Array(arr1, arr2, arr1, arr2, arr1, arr2, arr1))
     val game = Game(testGrid, Player("tom", "X", 0), Player("jack", "O", 0), false, new TestingInput(List(0)))
-    val test = game.takeTurn(game.player1)
+    val test = game.play()
+    assertEquals(test.gameOver, true)
+  }
+
+  test("game ends when a player wins") {
+    val moveSet: List[Int] = List(0,1,0,1,0,1,0,1)
+    val game = Game(Board(6,7), Player("tom", "X", 0), Player("jack", "O", 0), false, new TestingInput(moveSet))
+    val test = game.play()
     assertEquals(test.gameOver, true)
   }
 }

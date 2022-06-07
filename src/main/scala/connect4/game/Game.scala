@@ -55,13 +55,14 @@ case class Game(board: Board, player1: Player, player2: Player, gameOver: Boolea
    * recursively calls a function to take each players turn one after the other
    * breaks out if the game is over and prints the winner.
    */
-  def play(): Unit =
+  def play(): Game =
     @tailrec
-    def auxPlay(player: Player, game: Game): Unit =
+    def auxPlay(player: Player, game: Game): Game =
       val otherPlayer = playerList.filter(_.name != player.name).head
       if game.gameOver then
         board.print()
         if board.isFull then println("Game Over") else println(s"${otherPlayer.name} wins!")
+        game
       else auxPlay(otherPlayer, takeTurn(player))
 
     auxPlay(chooseFirstPlayer(), this)
