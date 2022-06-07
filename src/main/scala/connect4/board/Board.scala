@@ -86,6 +86,9 @@ case class Board(grid: Array[Array[String]]) {
       
     // returns true if any contain 4 tokens in a row
     checkColumn(player.lastMove) || checkRow(player.lastMove) || checkDiagonal(player.lastMove)
+    
+  // checks to see if the grid has been filled
+  def isFull: Boolean = grid.forall(_.forall(_ != "-"))
 }
 
 //def main(args: Array[String]): Unit = {

@@ -30,9 +30,9 @@ case class Game(board: Board, player1: Player, player2: Player, gameOver: Boolea
     val col = takeInput(player)
     val newBoard = board.dropToken(col)(player)
     val newPlayer = player.newMove(col)
-    val gameState = newBoard.checkWin(newPlayer)
-    if player == player1 then Game(newBoard, newPlayer, player2, gameState, consoleInput)
-    else Game(newBoard, player1, newPlayer, gameState, consoleInput)
+    val isGameOver = newBoard.checkWin(newPlayer) || newBoard.isFull
+    if player == player1 then Game(newBoard, newPlayer, player2, isGameOver, consoleInput)
+    else Game(newBoard, player1, newPlayer, isGameOver, consoleInput)
   }
 
   /**
@@ -59,9 +59,9 @@ case class Game(board: Board, player1: Player, player2: Player, gameOver: Boolea
     @tailrec
     def auxPlay(player: Player, game: Game): Unit =
       val otherPlayer = playerList.filter(_.name != player.name).head
-      if (game.gameOver) then
+      if game.gameOver then
         board.print()
-        println(s"${otherPlayer.name} wins!")
+        if board.isFull then println("Game Over") else println(s"${otherPlayer.name} wins!")
       else auxPlay(otherPlayer, takeTurn(player))
 
     auxPlay(chooseFirstPlayer(), this)
