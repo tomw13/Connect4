@@ -1,0 +1,13 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/tomw/Documents/Scala/Connect4/target/scala-3.1.2/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: /Users/tomw/Documents/Scala/Connect4/src/main/scala/Board.scala:77:39 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m77 |[0m  println(fifthBoard.getLeadingDiagonal([31m0[0m).mkString)[0m
+[0m[[0m[31merror[0m] [0m[0m   |          [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |missing argument for parameter startRow of [33mmethod[0m [35mgetLeadingDiagonal[0m in [33mclass[0m [35mBoard[0m: (startCol: Int, startRow: Int): Array[String][0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed 5 Jun 2022, 20:08:29[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

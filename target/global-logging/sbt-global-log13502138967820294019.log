@@ -1,0 +1,24 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/tomw/Documents/Scala/Connect4/target/scala-3.1.2/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: /Users/tomw/Documents/Scala/Connect4/src/main/scala/Board.scala:14:23 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m14 |[0m      [33mif[0m (pointer < [31m0[0m) arr[0m
+[0m[[0m[31merror[0m] [0m[0m   |                       [31m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                       Found:    (arr : Array[String])[0m
+[0m[[0m[31merror[0m] [0m[0m   |                       Required: Array[Char][0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: /Users/tomw/Documents/Scala/Connect4/src/main/scala/Board.scala:17:8 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m17 |[0m        arr[0m
+[0m[[0m[31merror[0m] [0m[0m   |        [31m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |        Found:    (arr : Array[String])[0m
+[0m[[0m[31merror[0m] [0m[0m   |        Required: Array[Char][0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: /Users/tomw/Documents/Scala/Connect4/src/main/scala/Board.scala:21:32 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m21 |[0m    updatedGrid(col) = dropInCol(updatedGrid(col), player, updatedGrid(col).length - [31m1[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                       [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                       Found:    Array[[1m[31mChar[0m][0m
+[0m[[0m[31merror[0m] [0m[0m   |                       Required: Array[[1m[32mString[0m][0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed 1 Jun 2022, 18:15:13[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m
